@@ -106,7 +106,7 @@ const playSound = () => {
   button(clip.id)
 }
     return (
-        <div onClick={playSound} className={`drum-pad btn btn-secondary p-4 m-3 ${active && "btn-warning"}`}>
+        <div id={clip.id} onClick={playSound} className={`drum-pad btn btn-secondary p-4 m-3 ${active && "btn-warning"}`}>
             <audio className="clip" id={clip.keyTrigger} src={clip.url} /> 
             {clip.keyTrigger}
         </div>
